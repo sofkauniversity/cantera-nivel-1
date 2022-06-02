@@ -14,6 +14,17 @@ img {
     }
 }
 
+.youtube-player {
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 560px) {
+    .youtube-player {
+        width: auto;
+    }
+}
+
 .center {
     text-align: center;
 }
