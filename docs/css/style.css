@@ -22,6 +22,7 @@ img {
 @media (max-width: 560px) {
     .youtube-player {
         width: auto;
+        height: auto;
     }
 }
 
