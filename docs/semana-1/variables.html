@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lógica de programación con PSeInt: Variables</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Variables</h1>
+            <p>
+                Cuando se inicia un nuevo programa con PSeInt, se obtiene una
+                imagen como la siguiente
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/01. EstadoInicial - PSeInt.png"
+                    style="width: 633px"
+                    alt="Estado inicial"
+                />
+            </p>
+            <ol>
+                <li>
+                    En esta parte escribimos el nombre de nuestra aplicación,
+                    esta no debe de contener espacios en blanco. Si nuestro
+                    código lo fuésemos a llamar
+                    <span style="font-style: italic">Mi Primera App</span>, las
+                    formas correctas de nombrar nuestro código, serían las
+                    siguientes:
+                    <span style="font-style: italic">MiPrimeraApp</span>,
+                    <span style="font-style: italic">mi_primera_app</span> o
+                    también
+                    <span style="font-style: italic">miPrimeraApp</span>.
+                </li>
+                <li>
+                    El botón Comenzar, sirve para poder ejecutar el código
+                    escrito y ver el resultado del mismo en una consola.
+                </li>
+                <li>
+                    Todo código tiene un comienzo y en PSeInt el comienzo del
+                    código se dicta con la palabra
+                    <span style="font-weight: bold">Proceso</span>, seguido del
+                    nombre del código.
+                </li>
+                <li>
+                    Todo código termina con la palabra
+                    <span style="font-weight: bold">FinProceso</span>, esto le
+                    dice al PSeInt dónde cierra el código al ser ejecutado.
+                </li>
+            </ol>
+            <h1><span style="font-weight: bold">Variables</span></h1>
+            <p>
+                Actualmente para poder almacenar información en programación, se
+                debe crear un espacio en memoria bajo un nombre, dicho espacio
+                en memoria se llama
+                <span style="font-weight: bold">variable</span>.
+            </p>
+            <p>Las variables en PSeInt, las hay de cuatro tipos:</p>
+            <ul>
+                <li>Caracter</li>
+                <li>Real</li>
+                <li>Entero</li>
+                <li>Lógico</li>
+            </ul>
+            <h2>Variable tipo Caracter</h2>
+            <p>
+                Las variables de tipo
+                <span style="font-weight: bold">Caracter</span>, son usadas
+                comúnmente para almacenar información como nombres, es decir,
+                cadenas de caracteres, una sola letra e incluso números, con la
+                peculiaridad de que estos números no podrán ser usados en un
+                futuro para temas operacionales como, sumar, restar,
+                multiplicar, dividir, entre otros.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/02. VariableCaracter - PSeInt.png"
+                    style="width: 633px"
+                    alt="Variable tipo caracter"
+                />
+            </p>
+            <h2>Variables tipo Real</h2>
+            <p>
+                Las variables de tipo
+                <span style="font-weight: bold">Real</span>, son usadas para
+                almacenar números con su parte decimal, tanto negativos como
+                positivos. Por ejemplo la altura de una persona, el cual, podría
+                ser 1.8
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/03. VariableReal - PSeInt.png"
+                    style="width: 633px"
+                    alt="Variable tipo real"
+                />
+            </p>
+            <h2>Variables tipo Entero</h2>
+            <p>
+                Las variables de tipo
+                <span style="font-weight: bold">Entero</span>, son usadas para
+                guardar número enteros, es decir, números sin su parte decimal.
+                También con la posibilidad de guardar tanto número positivos
+                como número negativos. Por ejemplo, la edad de una persona.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/04. VariableEntero - PSeInt.png"
+                    style="width: 633px"
+                    alt="Variable tipo entero"
+                />
+            </p>
+            <h2>Variables de tipo Logico</h2>
+            <p>
+                Las variables de tipo
+                <span style="font-weight: bold">Logico</span>, tienen la
+                capacidad de guardar solo dos valores, Falso o Verdadero. Por
+                ejemplo, el estado de una persona en un sistema: activo o
+                inactivo.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/05. VariableLogico - PSeInt.png"
+                    style="width: 633px"
+                    alt="Variable tipo logico"
+                />
+            </p>
+            <p>
+                Como se observa en las imágenes anteriores, cada vez se que
+                quiere definir la creación de una variable, es decir, separar
+                espacio en memoria para almacenar un dato, es importante
+                escribir la palabra
+                <span style="font-weight: bold">Definir</span>, seguido del
+                nombre de la variable, luego se escribe la palabra
+                <span style="font-weight: bold">Como</span> y por último se
+                termina con el nombre del tipo de dato que se desea crear:
+                <span style="font-weight: bold">Caracter</span>,
+                <span style="font-weight: bold">Real</span>,
+                <span style="font-weight: bold">Entero</span> o
+                <span style="font-weight: bold">Logico</span>.
+            </p>
+            <p>
+                En PSeInt, la forma de poder asignar información a las
+                variables, se hace por medio del signo menor que (&lt;) y un
+                guión medio o signo menos (-). A continuación en la siguiente
+                imagen, se puede observar la forma en que se asigna información
+                a cada una de las variables declaradas.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/06. AsignaciónDeValores - PSeInt.png"
+                    style="width: 633px"
+                    alt="Asignación de valores"
+                />
+            </p>
+            <p>
+                Como se observa en la
+                <span style="font-weight: bold">línea 8</span>, para poder
+                asignar un carácter o cadena de caracteres a una variable, este
+                debe de ir encerrado entre comillas dobles ("...") o entre
+                comillas simples ('...'). La combinación de comillas dobles y
+                comillas simples no está permitida y el programa al compilar
+                puede generar un error.
+            </p>
+            <p>
+                Como se observa en la
+                <span style="font-weight: bold">línea 9</span>, los números
+                reales en su parte decimal, en PSeInt se define por medio de un
+                punto (.) y no con una coma (,)
+            </p>
+            <p>
+                Tanto en la <span style="font-weight: bold">línea 11</span> como
+                la <span style="font-weight: bold">línea 12</span>, se está
+                asignando los valores de
+                <span style="font-weight: bold">Falso</span> y
+                <span style="font-weight: bold">Verdadero</span>, esto con el
+                fin de usted como estudiante pueda tener una mejor referencia en
+                la asignación de uno de estos dos valores.
+            </p>
+            <p>
+                Por último y no menos importante, tenga muy presente que toda
+                línea, a excepción de la primera y la última, siempre terminan
+                con el signo punto y coma (;)
+            </p>
+            <h2>Capturar información del teclado en una variable</h2>
+            <p>
+                Para poder capturar información que introduce un usuario por
+                medio del teclado en una variable, se debe usar la palabra
+                <span style="font-weight: bold">Leer</span> seguido del nombre
+                de la variable donde se quiere capturar la información,<span
+                    style="font-weight: bold"
+                    >&nbsp;</span
+                >así como se nos muestra en la siguiente imagen.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/07. CapturaDeInformación - PSeInt.gif"
+                    style="width: 776px"
+                    alt="Captura de información"
+                />
+            </p>
+        </div>
+    </body>
+</html>

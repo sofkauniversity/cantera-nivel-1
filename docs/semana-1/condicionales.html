@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lógica de programación con PSeInt: Condicionales</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Condicionales</h1>
+            <p>
+                Los condicionales en programación de software, sirven para tomar
+                decisiones basados en una pregunta cuya respuesta es
+                <span style="font-weight: bold">Falso</span> o
+                <span style="font-weight: bold">Verdadero</span>.
+            </p>
+            <h2>Si - Entonces</h2>
+            <p>
+                La estructura básica de un condicional simple en PSeInt se
+                implementa usando la palabra
+                <span style="font-weight: bold">Si</span>, seguido de la
+                <span style="font-weight: bold">pregunta</span> y luego se usa
+                la palabra <span style="font-weight: bold">Entonces</span>,
+                después de eso se escribe el código que se desea ejecutar si la
+                respuesta a la pregunta realizada es positiva, y se finaliza con
+                la palabra <span style="font-weight: bold">FinSi</span>.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/12. Condicionales - PSeInt.png"
+                    style="width: 607px"
+                    alt="Condicionales"
+                />
+            </p>
+            <p>
+                A continuación un ejemplo de un condicional simple aplicando lo
+                anteriormente mencionado.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/13. CondicinalesEjemploBasico - PSeInt.gif"
+                    style="width: 746px"
+                    alt="Condicionales ejemplo básico"
+                />
+            </p>
+            <p>
+                En el ejemplo anterior, la pregunta sería
+                <span style="font-weight: bold">¿estado es verdadero?</span>,
+                como se muestra en la línea 8, en caso de que la respuesta a la
+                pregunta sea <span style="font-weight: bold">positiva</span>,
+                entonces se mostrará en pantalla
+                <span style="font-weight: bold">Usted es un estudiante</span>,
+                pero en caso de que la respuesta sea
+                <span style="font-weight: bold">negativa</span>, entonces
+                <span style="font-weight: bold">no se mostrará nada</span>.
+            </p>
+            <p>
+                Ahora vamos a completar el ejemplo anterior y el programa
+                responderá
+                <span style="font-weight: bold">Usted no está estudiando</span>,
+                en caso de que la respuesta a la pregunta sea negativa.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/14. CondicionalesSiSino - PSeInt.gif"
+                    style="width: 746px"
+                    alt="Condicionales Si/No"
+                />
+            </p>
+            <p>
+                Como se puede observar en el código anterior, la palabra
+                <span style="font-weight: bold">SiNo</span> complementa el
+                bloque al condicional definido, el cual, responderá en caso de
+                que la respuesta a la pregunta realizada inicialmente sea
+                negativa.
+            </p>
+            <h2>Segun - Hacer</h2>
+            <p>
+                La estructura de control
+                <span style="font-weight: bold">Segun - Hacer</span>, permite
+                trabajar con variables de tipo número, donde, según el valor
+                introducido podrá ocurrir una cosa o la otra según la opción
+                elegida.
+            </p>
+            <p style="text-align: center">
+                <img
+                    src="../img/15. CondicionalesSegun - PSeInt.gif"
+                    style="width: 870px"
+                    alt="Condicionales Segun"
+                />
+            </p>
+            <p>
+                Como se puede observar en el ejemplo anterior, la estructura
+                <span style="font-weight: bold">Segun - Hacer</span>, la cual se
+                encuentra entre las
+                <span style="font-weight: bold">líneas 14 y 28</span>, evalúa la
+                variable <span style="font-weight: bold">opcion</span> cuya
+                definición es de tipo
+                <span style="font-weight: bold">Entero</span>, pero también
+                utiliza la expresión
+                <span style="font-weight: bold">De Otro Modo</span>, el cual
+                evalúa cualquier valor que se sale de los ya condicionados a
+                evaluar, para este ejemplo serían las
+                <span style="font-weight: bold">opciones 1, 2 y 3</span>,
+                cualquier otra opción diferente, será tomada en
+                <span style="font-weight: bold">De Otro Modo</span>.
+            </p>
+            <h2>Operadores en PSeInt</h2>
+            <p>
+                Cuando se habla de estructuras condicionales en programación de
+                software, es indiscutible no hablar de operadores tanto
+                matemáticos como operadores lógicos en cualquier lenguaje de
+                programación. En PSeInt se manejan los siguientes operadores.
+            </p>
+            <h3>Operadores algebraicos</h3>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Símbolo</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Definición</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Ejemplo</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">+</td>
+                        <td style="text-align: center">Suma</td>
+                        <td style="text-align: center">
+                            total &lt;- cantidad1 + cantidad2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">-</td>
+                        <td style="text-align: center">Resta</td>
+                        <td style="text-align: center">
+                            stock &lt;- disponible - venta
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">*</td>
+                        <td style="text-align: center">Multiplicación</td>
+                        <td style="text-align: center">
+                            area &lt;- base * altura
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">/</td>
+                        <td style="text-align: center">División</td>
+                        <td style="text-align: center">
+                            mesada &lt;- salario / hijos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">^</td>
+                        <td style="text-align: center">Potenciación</td>
+                        <td style="text-align: center">
+                            areaCirculo &lt;- pi * radio ^ 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">% ó MOD</td>
+                        <td style="text-align: center">
+                            Módulo (residuo de una división)
+                        </td>
+                        <td style="text-align: center">
+                            residuo &lt;- 5 MOD 2
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Dado que estamos frente a operaciones matemáticas, aquí también
+                se cumple la ley de los signos y paréntesis, el cual te invito a
+                darle un vistazo al
+                <a href="https://youtu.be/whygXuleX_A" target="_blank"
+                    >siguiente vídeo</a
+                >&nbsp;para que refresques la memoria y no cometer errores a la
+                hora de codificar una operación matemática.
+            </p>
+            <h3>Operadores racionales</h3>
+            <p></p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Símbolo</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Definición</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Ejemplo</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Resultado</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">&gt;</td>
+                        <td style="text-align: center">Mayor que</td>
+                        <td style="text-align: center">3 &gt; 2</td>
+                        <td style="text-align: center">Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">&lt;</td>
+                        <td style="text-align: center">Menor que</td>
+                        <td style="text-align: center">3 &lt; 2</td>
+                        <td style="text-align: center">Falso</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">=</td>
+                        <td style="text-align: center">Igual que</td>
+                        <td style="text-align: center">5 = 5</td>
+                        <td style="text-align: center">Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">&lt;=</td>
+                        <td style="text-align: center">Menor o igual que</td>
+                        <td style="text-align: center">5 &lt;= 10</td>
+                        <td style="text-align: center">Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">&gt;=</td>
+                        <td style="text-align: center">Mayor o igual que</td>
+                        <td style="text-align: center">5 &gt;= 10</td>
+                        <td style="text-align: center">Falso</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">&lt;&gt;</td>
+                        <td style="text-align: center">Distinto que</td>
+                        <td style="text-align: center">
+                            "Julian" &lt;&gt; "Andres"
+                        </td>
+                        <td style="text-align: center">Verdadero</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Operadores lógicos</h3>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Símbolo</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Definición</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Ejemplo</span>
+                        </td>
+                        <td style="text-align: center">
+                            <span style="font-weight: bold">Resultado</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">&amp; ó Y</td>
+                        <td style="text-align: center">Conjunción (y)</td>
+                        <td style="text-align: center">
+                            (15 &gt; 18) Y (1= 1)
+                        </td>
+                        <td style="text-align: center">Falso</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">| ó O</td>
+                        <td style="text-align: center">Disyunción (o)</td>
+                        <td style="text-align: center">
+                            <span style="text-align: center"
+                                >(15 &gt; 18) O (1= 1)</span
+                            ><br />
+                        </td>
+                        <td style="text-align: center">Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">~ ó NO</td>
+                        <td style="text-align: center">Negación (no)</td>
+                        <td style="text-align: center">NO(5 = 5)</td>
+                        <td style="text-align: center">Falso</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p></p>
+            <p>
+                Como programadores de software te podemos decir que esta parte
+                se aprende muy fácilmente cuando haces muchos ejercicios y con
+                la práctica, pero si te da curiosidad al respecto, te
+                recomendamos este
+                <a
+                    href="https://www.youtube.com/watch?v=vKe0UKSpNQQ&amp;list=PLeySRPnY35dHBYcVHPisjBCVHBa954rMZ"
+                    target="_blank"
+                    >curso de lógica</a
+                >.
+            </p>
+        </div>
+    </body>
+</html>
