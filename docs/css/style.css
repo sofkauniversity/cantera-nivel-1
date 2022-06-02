@@ -3,6 +3,24 @@
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: auto;
+    }
+}
+
 .center {
     text-align: center;
 }
